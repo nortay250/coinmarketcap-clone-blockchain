@@ -48,13 +48,17 @@ function CMCTableRow({
 
   const viewCoinDetails = () => {
     router.push(
-      `/currencies/info?symbol=${coinSymbol}&coin=${coinName}&price=${price}`
+      `/currencies/info?symbol=${coinSymbol}&coin=${coinName}&price=${formatNum(
+        price
+      )}`
     )
   }
 
   const viewPrice = () => {
     router.push(
-      `/currencies/price?symbol=${coinSymbol}&coin=${coinName}&price=${price}`
+      `/currencies/price?symbol=${coinSymbol}&coin=${coinName}&price=${formatNum(
+        price
+      )}`
     )
   }
 
