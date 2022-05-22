@@ -18,6 +18,8 @@ const styles = {
 }
 
 function CoinNameRow({ name, icon, clicked }) {
+  const { openModal } = useContext(CoinMarketContext)
+
   const coinIcon = () => {
     switch (name) {
       case 'Bitcoin':
@@ -141,7 +143,9 @@ function CoinNameRow({ name, icon, clicked }) {
 
       <p>
         {name === 'Bitcoin' || name === 'Ethereum' || name === 'Tether' ? (
-          <span className={styles.buyButton}>Buy</span>
+          <span className={styles.buyButton} onClick={() => openModal()}>
+            Buy
+          </span>
         ) : (
           <div></div>
         )}
