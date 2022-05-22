@@ -84,7 +84,7 @@ function CMCTableRow({
         ) : (
           <div></div>
         )}
-        <td className="onClick={viewPrice} cursor-pointer">
+        <td className="cursor-pointer" onClick={viewPrice}>
           <p>${formatNum(price)}</p>
         </td>
         <td>
