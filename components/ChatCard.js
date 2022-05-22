@@ -36,13 +36,13 @@ function ChatCard({
             <Image
               width={40}
               height={40}
-              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740"
+              src={senderAvatar}
               className="rounded-full"
               alt="avatar"
             />
           </div>
           <div className={styles.labelsContainer}>
-            {senderAvatar}
+            {sender}
             &nbsp; • &nbsp;
             <span className={styles.grey400}>{timeStamp}</span>
             &nbsp; • &nbsp;
